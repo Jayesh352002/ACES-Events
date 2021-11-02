@@ -7,3 +7,6 @@ function sport(){
 function cul(){
   window.location="Cultural.html";
 }
+function pub(){
+  window.location="Publicity.html";
+}

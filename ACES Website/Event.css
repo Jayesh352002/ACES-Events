@@ -10,7 +10,7 @@ body{
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  margin-left: 160px;
+  margin-left: 20px;
 }
 
 .flip-card-inner-tech {
@@ -54,7 +54,7 @@ body{
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  margin-left: 520px;
+  margin-left: 682px;
   margin-top: -320px;
 }
 
@@ -95,8 +95,8 @@ body{
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  margin-left: 880px;
-  margin-top: -320px;
+  margin-left: 346px;
+  margin-top: -323px;
 }
 
 .flip-card-inner-cultural {
@@ -127,6 +127,47 @@ body{
 }
 
 .flip-card-back-cultural {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-publicity {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: 1010px;
+  margin-top: -321px;
+}
+
+.flip-card-inner-publicity {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-publicity:hover .flip-card-inner-publicity {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-publicity, .flip-card-back-publicity {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-publicity {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back-publicity {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
